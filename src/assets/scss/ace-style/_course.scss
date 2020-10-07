@@ -1,0 +1,115 @@
+.button-click{
+    color: #ffffff;
+    font-weight: 600;
+    padding: 70px 15px 70px 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.button-click:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*======JavaScript Side Bar=======*/
+.javascript-box{
+    background: #3148BC;
+    height: 80vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.javascript-button{
+    text-align: center;
+    padding-top: 25vh;
+}
+.swipe-mobile-javascript{
+    border: 2px solid #3148BC;
+    color: #3148BC;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+.swipe-mobile-javascript:hover{
+    color: #3148BC;
+    text-decoration: none;
+}
+
+/*======Python Side Bar=======*/
+.python-box{
+    background: #E8505B;
+    height: 80vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.python-button{
+    text-align: center;
+    padding-top: 25vh;
+}
+.swipe-mobile-python{
+    border: 2px solid #E8505B;
+    color: #E8505B;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+.swipe-mobile-python:hover{
+    color: #E8505B;
+    text-decoration: none;
+}
+
+/*======UI/UX SideBar========*/
+.swipe-mobile-ui {
+    border: 2px solid #FFB51A;
+    color: #FFB51A;
+    background: transparent;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+.swipe-mobile-ui:before{
+    content: "\f30b";
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.swipe-mobile-ui:hover{
+    color: #FFB51A;
+    text-decoration: none;
+}
+.ui-box{
+    background: #FFB51A;
+    height: 80vh;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0;
+}
+.ui-button{
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.main-box{
+    border-radius: 20px;
+    height: 80vh;
+    background: #fff;
+}
+.rm-margin-right{
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+.rm-margin-left{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}

@@ -1,0 +1,231 @@
+
+#team{
+    
+    .slider-head{
+        margin-top: 50px;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+    .slider-head:hover{
+        overflow-x: auto;
+    }
+    .slick-list{
+        text-align: center;
+        margin-left: 40px;
+    }
+
+    .image-only{
+        margin-top: 80px;
+        transition: all 0.3s ease 0s;
+        text-align: center;
+        cursor: pointer;
+
+        .member-details {
+            display: none;
+        }
+        img{
+            z-index: 999;
+            opacity: 1;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            // -webkit-filter: grayscale(100%);
+            // filter: grayscale(100%);
+        }
+
+    }
+    .our-team{
+        cursor: pointer;
+        margin-bottom: 140px;
+       
+        img{
+            transform: scale(0.5) translateY(-30%);
+            z-index: 99;
+            top: -20px;
+            left: 20px;
+            border-radius: 50%;
+           
+            position: relative;
+            // -webkit-filter: grayscale(100%);
+            // filter: grayscale(100%);
+        }
+        .member-details{
+            margin-left: 20px;
+            padding: 7px 20px 25px 20px;
+            background: #000000;
+            border-radius: 10px;
+            color: #fff;
+            position: absolute;
+            top: 60px;
+            transition: margin-left 1s ease-in;
+            z-index: 10;
+            
+            text-align: right;
+
+            .info{
+                margin-right: 50px;
+                margin-top: 80px;
+
+                h4, h5 {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                p{
+                    padding-top: 10px;
+                    text-transform: uppercase;
+                    font-size: .7rem;
+                    font-weight: 600;
+                }
+            }
+            .details{
+                text-align: justify;
+                font-size: .85rem;
+                padding-bottom: 15px;
+            }
+            .socials{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+
+                li{
+                    display: inline;
+                    margin-left: 8px;
+
+                    a{
+                        color: rgba(0, 0, 0, 0.6);
+                        background: #fff;
+                        border-radius: 50%;
+                        font-weight: normal;
+                        font-size: .9rem;
+                        padding: 3px 6px;
+                    }
+                }
+            }
+        }
+
+        &:hover .member-details{
+            opacity: 1;
+            z-index: 1;
+        }
+    
+    }
+}
+
+@media(max-width : 576px){
+    #team{
+        .slider-head{
+            flex-wrap: wrap;
+        }
+
+        .image-only{
+            text-align: center;
+            margin-top: 0;
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            
+        }
+        .our-team{
+            text-align: center;
+
+            img{
+                width: 250px;
+                height: 250px;
+                top: -25px;
+                left: 0;
+                right: 0;
+            }
+
+            .member-details{
+                margin-left: 30px;
+                width: 250px;
+            }
+        }
+        
+    }
+    
+}
+
+@media(min-width : 576px){
+    #team{
+
+        .image-only{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .our-team{
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media(min-width : 768px){
+    #team{
+
+        .image-only{
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .our-team{
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        
+    }
+}
+
+@media(min-width : 992px){
+    #team{
+
+        .image-only{  
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+        .our-team{
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            
+        }
+        
+    }
+}
+
+@media(min-width : 1200px){
+    #team{
+
+        .image-only{  
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .our-team{
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            .member-details{
+                width: 250px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,147 @@
+.tab-menu{
+    text-align: center;
+    margin-top: 40px;
+    ul.nav {
+        margin: 0;
+        padding: 0;
+        border: 0;
+
+        li {
+            display: inline-block;
+            a{
+                color: #c9c9c9;
+                margin-right: 5px;
+                background-color: $transparent-bg;
+                border-radius: 10px;
+                font-size: 1rem;
+                height: 43px;
+                padding-top: 10px;
+                //padding: $padding-btn-vertical $padding-round-horizontal;
+                line-height: $line-height-general;
+                transition: all 0.3s ease 0s;
+                font-weight: bold;
+
+                span{
+                    padding-bottom: 5px;
+                    padding-top: 35px;
+                    font-weight: bold;
+                }
+                img{
+                    display: none;
+                }
+
+                &:hover {
+                    background-color: $transparent-bg;
+                    padding-top: 0;
+                }
+                
+                &:hover img {
+                    display: inline;
+                } 
+
+                &.active img {
+                    display: inline;
+                }
+            }
+            .learn-a.active{
+                box-shadow:0 .125rem .25rem rgba(0, 0, 0, .075);
+                font-weight: 600;
+                color: #6AAFE8;
+                transition: all 0.5s ease 0s;
+                padding-top: 0;
+            }
+            .build-a.active{
+                box-shadow:0 .125rem .25rem rgba(0, 0, 0, .075);
+                font-weight: 600;
+                color: #FF8578;
+                transition: all 0.5s ease 0s;
+                padding-top: 0;
+            }
+            .hire-a.active{
+                box-shadow:0 .125rem .25rem rgba(0, 0, 0, .075);
+                font-weight: 600;
+                color: #639C38;
+                transition: all 0.5s ease 0s;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+.tab-section {
+    margin: 40px 50px;
+    
+    h1, h5{
+        text-transform: uppercase;
+        font-weight: 600;
+        display: inline;
+    }
+    p{
+        color: rgba(0, 0, 0, .4);
+        font-size: .9rem;
+        font-weight: 600;
+    }
+}
+
+.learn-tab{
+    h1, h5{
+        color: #6AAFE8;
+    }
+}
+
+.build-tab{
+    h1, h5{
+        color: #FF8578;
+    }
+}
+
+.hire-tab{
+    h1, h5{
+        color: #639C38;
+    }
+}
+
+@media(max-width : 600px){
+    .tab-menu {
+        margin-top: 20px;
+    }
+    .tab-body{
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+    .tab-section{
+        margin: 20px;
+        h1{
+            font-size: 2.5rem;
+        }
+        h5{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width : 600px){
+    .tab-section{
+
+        h1{
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 1rem;
+        }
+    }
+}
+
+@media(min-width : 1200px){
+    .tab-section{
+
+        h1{
+            font-size: 3.4rem;
+        }
+        h5{
+            font-size: 1.25rem;
+        }
+    }
+}

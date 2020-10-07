@@ -1,0 +1,45 @@
+#customers{
+
+    .customer-box{
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .name{
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+
+            span{
+                font-weight: normal;
+                font-size: .9rem;
+            }
+        }
+
+        .review{
+            font-size: .85rem;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width : 576px){
+    #customers{
+        margin-right: 3%;
+        margin-left: 3%;
+        .name{
+            margin-right: 70px;
+            margin-top: 20px;
+        }
+        .review{
+            font-size: 1rem !important;
+        }
+        
+    }
+}

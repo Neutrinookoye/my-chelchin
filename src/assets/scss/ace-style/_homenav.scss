@@ -1,0 +1,136 @@
+.main {
+    position: relative;
+    top: 63px;
+    margin-bottom: 3rem;
+}
+
+.home-nav {
+    background: #1B1E23;
+    padding: 10px 0;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+
+    .search-col {
+        i {
+            color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 8px;
+            left: 18px;
+            font-size: 1.1rem;
+        }
+
+        .search-box {
+            background-color: transparent;
+            border-radius: .7rem;
+            width: 7.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            height: 1.9rem;
+            text-align: right;
+            outline: none;
+            transition: all .5s ease-in-out;
+            padding-left: 2.5rem;
+            color: rgba(255, 255, 255, 0.8);
+
+            &:focus {
+                border: 2.5px solid #E74C3C;
+                box-shadow: none;
+                width: 18rem;
+                color : rgba(255, 255, 255, 0.8);
+
+                &::placeholder {
+                    opacity: 0;
+                }
+            }
+
+            &::placeholder {
+                padding-left: 18px;
+                font-size: .8rem;
+                color : rgba(255, 255, 255, 0.8);
+            }
+
+            
+        }
+    }
+
+    .h-navs {
+        text-align: right;
+        ul {
+            list-style: none;
+            margin : 0;
+            padding: 0;
+
+            li{
+                display: inline;
+                margin-right: 1.9rem;
+
+                a {
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    border-bottom: 1px solid transparent;
+                    padding-bottom: 0rem;
+                    transition: all .5s ease-in-out;
+
+                    &:hover {
+                        color: #E74C3C;
+                        text-decoration: none;
+                        border-bottom: 1px solid #E74C3C;
+                        padding-bottom: .4rem;
+                    }
+
+                    &.active{
+                        color: #E74C3C;
+                        border-bottom: 2px solid #E74C3C;
+                        text-decoration: none;
+                        padding-bottom: .4rem;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width : 992px) {
+    .main {
+        top:  50px;
+    }
+    .search-col {
+        text-align: center;
+        margin-top: 1rem;
+
+        .search-box {
+            width: 17rem !important;
+            text-align: left !important;
+
+            &::placeholder {
+                padding-left: 7px !important;
+                font-size: .7rem;
+            }
+
+            &:focus {
+                color: rgba(255, 255, 255, 0.8);
+            }
+    
+        }
+
+    }
+
+    .h-navs {
+        padding-top: 2rem;
+        text-align: center !important;
+        overflow: hidden;
+        ul {
+            li {
+                display: inline-block !important;
+                margin-bottom: .9rem !important;
+                
+            }
+        }
+    }
+}

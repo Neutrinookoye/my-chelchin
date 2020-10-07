@@ -1,0 +1,81 @@
+@include form-control-placeholder($default-color, .8);
+
+.form-horizontal{
+    background: #fff;
+    padding: 20px 30px;
+
+    .control-label{
+        font-size: .75rem;
+        font-weight: 600;
+    }
+
+}
+
+.form-housing {
+    border : 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 30px;
+
+    .control-label{
+        font-size: .75rem;
+        font-weight: 600;
+    }
+}
+
+.form-modal {
+    border : 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px 30px;
+
+    .control-label{
+        font-size: .75rem;
+        font-weight: 600;
+    }
+}
+
+textarea.form-control{
+    height: 120px !important;
+}
+.form-control {
+    background-color: $transparent-bg;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    color: $black-color;
+    height: auto;
+    line-height: normal;
+    font-size: $font-size-small;
+    @include transition-input-focus-color();
+    @include box-shadow(none);
+
+    .has-success &{
+        border-color: $light-gray;
+    }
+
+    &:focus{
+        border: 1px solid $info-color;
+        @include box-shadow(none);
+        outline: 0 !important;
+        color: $black-color;
+
+        & + .input-group-text,
+        & ~ .input-group-text{
+            border: 1px solid $primary-color;
+            border-left: none;
+            background-color: $transparent-bg;
+        }
+    }
+}
+
+
+// Input files - hide actual input - requires specific markup in the sample.
+.form-group input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
